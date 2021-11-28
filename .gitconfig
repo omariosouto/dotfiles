@@ -1,0 +1,7 @@
+[user]
+	name = Mario Souto
+	email = 13791385+omariosouto@users.noreply.github.com
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
