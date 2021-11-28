@@ -24,11 +24,20 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mariosouto/.profile && eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --file ~/.dotfiles/Brewfile
 
+#### Java Fixes
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 ### Finalização
 cd ~ && mkdir ./dev
 ```
 
+## Post install
+```sh
+#### Flutter Specific
+flutter doctor --android-licenses
+```
+
 ## How to extract current installed files?
 ```sh
-brew bundle dump
+cd ~/.dotfiles && brew bundle dump --force
 ```
