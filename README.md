@@ -1,4 +1,4 @@
-# My Dot files
+# My Dot files:
 
 ## Automate this
 ```sh
