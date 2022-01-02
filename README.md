@@ -39,5 +39,5 @@ flutter doctor --android-licenses
 
 ## How to extract current installed files?
 ```sh
-cd ~/.dotfiles && brew bundle dump --force
+cd ~/.dotfiles && brew bundle dump --force && git add . && git commit -m "update" && git push 
 ```
