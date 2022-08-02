@@ -6,6 +6,12 @@ export ZSH="/Users/mariosouto/.oh-my-zsh"
 alias dart2js="/opt/homebrew/opt/dart/libexec/bin/dart2js"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
+# Personal Aliases
+alias dev="cd ~/dev"
+alias dotfiles="cd ~/.dotfiles && brew bundle dump --force && git add . && git commit -m "update" && git push"
+
+# =================
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
