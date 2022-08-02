@@ -8,7 +8,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Personal Aliases
 alias dev="cd ~/dev"
-alias dotfiles="cd ~/.dotfiles && brew bundle dump --force && git add . && git commit -m "update" && git push"
+alias dotfiles="cd ~/.dotfiles && brew bundle dump --force && git add . && git commit -m "update" && git push && cd ~"
 
 # =================
 
