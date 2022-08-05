@@ -13,8 +13,8 @@ rm -rf ~/.zshrc
 ### Install rosetta
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
-### Setup dos dotfiles
-git clone https://github.com/omariosouto/dotfiles.git ~/.dotfiles
+### Setup dot dotfiles
+git clone --recurse-submodules https://github.com/omariosouto/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
