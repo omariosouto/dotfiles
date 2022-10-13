@@ -1,3 +1,3 @@
 [submodule "dotenv"]
 	path = dotenv
-	url = git@github.com:omariosouto/dotenv.git
+	url = https://github.com/omariosouto/dotenv.git
