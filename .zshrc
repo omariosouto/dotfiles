@@ -8,7 +8,15 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Personal Aliases
 alias dev="cd ~/dev"
+alias dscli="yarn --cwd /Users/mariosouto/dev/devsoutinho/platform dscli"
 alias dotfiles="cd ~/.dotfiles && brew bundle dump --force && git add . && git commit -m "update" && git push && cd ~"
+
+# Load Env Variables
+if [ -f ~/.dotfiles/dotenv/.env ]; then
+  export $(echo $(cat ~/.dotfiles/dotenv/.env | sed 's/#.*//g'| xargs) | envsubst)
+fi
+
+alias load-env="source ~/.zshrc "
 
 # =================
 
@@ -109,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # ASDF
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
+. $(brew --prefix)/Cellar/asdf/0.10.2/asdf.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
